@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import NoteForm from "./components/NoteForm";
-import NoteList from "./components/NoteList";
+import NotesForm from './components/NotesForm';
+import NotesList from './components/NotesList';
 
 export default function App() {
   const [notes, setNotes] = useState([]);
@@ -30,12 +30,12 @@ export default function App() {
   return (
     <div className="app-container">
       <h1>📝 Notes App</h1>
-      <NoteForm
+      <NotesForm     
         onAdd={addNote}
         onUpdate={updateNote}
         editNote={editNote}
       />
-      <NoteList
+      <NotesList      
         notes={notes}
         onDelete={deleteNote}
         onEdit={startEditing}
