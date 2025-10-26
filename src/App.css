@@ -1,0 +1,92 @@
+:root {
+  --bg: #0f1724;
+  --card: #121a2a;
+  --text: #f1f5f9;
+  --muted: #94a3b8;
+  --accent: #6366f1;
+  --accent2: #14b8a6;
+}
+
+body {
+  background: linear-gradient(180deg, #0f1724, #090f1a);
+  font-family: "Poppins", sans-serif;
+  color: var(--text);
+  margin: 0;
+  padding: 30px;
+}
+
+.app-container {
+  max-width: 900px;
+  margin: auto;
+  background: var(--card);
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.4);
+}
+
+h1 {
+  text-align: center;
+  color: var(--accent);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+input,
+textarea {
+  padding: 10px;
+  border-radius: 6px;
+  border: none;
+  outline: none;
+  background: #1e293b;
+  color: var(--text);
+}
+
+button {
+  background: linear-gradient(90deg, var(--accent), var(--accent2));
+  border: none;
+  color: #fff;
+  padding: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+button:hover {
+  opacity: 0.85;
+}
+
+.note {
+  background: #1e293b;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.note-title {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.note-content {
+  margin: 8px 0;
+  color: var(--muted);
+}
+
+.actions button {
+  background: none;
+  border: 1px solid var(--accent2);
+  padding: 6px 10px;
+  border-radius: 5px;
+  color: var(--accent2);
+}
+
+.actions button:hover {
+  background: var(--accent2);
+  color: #fff;
+}
