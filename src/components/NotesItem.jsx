@@ -1,4 +1,3 @@
-import React from "react";
 
 export default function NoteItem({ note, onDelete, onEdit }) {
   return (

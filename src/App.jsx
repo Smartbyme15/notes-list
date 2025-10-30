@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import NotesForm from './components/NotesForm';
 import NotesList from './components/NotesList';
-
+import './App.css'
 export default function App() {
   const [notes, setNotes] = useState([]);
   const [editNote, setEditNote] = useState(null);
