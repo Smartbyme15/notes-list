@@ -1,6 +1,5 @@
-import React from "react";
+
 import NoteItem from "./NotesItem";
-import NoteItem from "./NotesItem"; 
 
 export default function NoteList({ notes, onDelete, onEdit }) {
   if (notes.length === 0)
