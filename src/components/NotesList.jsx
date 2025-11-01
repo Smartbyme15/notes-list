@@ -1,6 +1,5 @@
 
 import NoteItem from "./NotesItem";
-
 export default function NoteList({ notes, onDelete, onEdit }) {
   if (notes.length === 0)
     return <p style={{ textAlign: "center", color: "#94a3b8" }}>No notes yet...</p>;
